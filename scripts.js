@@ -67,6 +67,17 @@ async function fetchAPIData() {
         { name: "Pokemon", url: "https://pokeapi.co/api/v2/pokemon/1", processData: data => `<img src="${data.sprites.front_default}" alt="Bulbasaur"><br>${data.name}` },
         { name: "Random Fact", url: "https://uselessfacts.jsph.pl/random.json?language=en", processData: data => data.text },
         { name: "Science Facts", url: "https://asli-fun-fact-api.herokuapp.com/", processData: data => data.data.fact },
+        { name: "Facts API", url: "https://api.api-ninjas.com/v1/facts", headers: { "X-Api-Key": "YOUR_API_KEY" }, processData: data => data[0].fact },
+        { name: "They Said So Quotes", url: "https://quotes.rest/qod", processData: data => data.contents.quotes[0].quote },
+        { name: "Random Facts API", url: "https://fungenerators.com/api/facts/random", processData: data => data.contents.fact },
+        { name: "Cat Facts", url: "https://catfact.ninja/fact", processData: data => data.fact },
+        { name: "Agify", url: "https://api.agify.io?name=bella", processData: data => `The estimated age for the name Bella is ${data.age}` },
+        { name: "Genderize", url: "https://api.genderize.io?name=scott", processData: data => `The predicted gender for the name Scott is ${data.gender}` },
+        { name: "PokeAPI", url: "https://pokeapi.co/api/v2/pokemon/1", processData: data => `<img src="${data.sprites.front_default}" alt="Bulbasaur"><br>${data.name}` },
+        { name: "REST Countries", url: "https://restcountries.com/v3.1/all", processData: data => `Country: ${data[0].name.common}, Capital: ${data[0].capital[0]}` },
+        { name: "Superhero API", url: "https://superheroapi.com/api/10223483088477564/1", processData: data => `Superhero: ${data.name}, Power: ${data.powerstats.power}` },
+        { name: "The Rick and Morty API", url: "https://rickandmortyapi.com/api/character/1", processData: data => `Character: ${data.name}, Species: ${data.species}` }
+
     ];
 
     const container = document.getElementById('api-data');
@@ -93,6 +104,6 @@ async function fetchAPIData() {
 updateBitcoinPrices();
 fetchAPIData();
 
-// Set interval to update Bitcoin price and API data every 60 seconds
+// Set interval to update Bitcoin price and API data every 120 seconds
 setInterval(updateBitcoinPrices, 120000);
 setInterval(fetchAPIData, 120000);
