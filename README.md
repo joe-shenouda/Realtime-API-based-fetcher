@@ -23,7 +23,7 @@ This project showcases publicly available APIs by fetching and displaying real-t
 ## Live Demo
 
 Check out the live demo of the project on GitHub Pages:
-[Realtime API-based Fetcher](https://YOUR-USERNAME.github.io/Realtime-API-based-fetcher/)
+[Realtime API-based Fetcher](https://githubhttps//joe-shenouda.github.io/Realtime-API-based-fetcher)
 
 ## APIs Used
 
