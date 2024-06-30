@@ -50,7 +50,7 @@ Welcome to the Realtime API-based Fetcher, a project crafted by **Joe Shenouda**
 
 ## How to Use
 
-Simply open the `index.html` file in your browser. The page will automatically fetch and display data from the included APIs. The data will refresh every 60 seconds.
+Simply open the `index.html` file in your browser. The page will automatically fetch and display data from the included APIs. The data will refresh every 120 seconds.
 
 ## Installation
 
