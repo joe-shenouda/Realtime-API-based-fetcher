@@ -2,7 +2,7 @@
 
 <img src="https://i.postimg.cc/x8vzYw5B/Design-5.png" alt="Banner" style="width:100%;">
 
-Welcome to the Realtime API-based Fetcher, a project crafted by **Joe Shenouda** ([cyber-consult.org](http://cyber-consult.org)). This project showcases the power of publicly available APIs by fetching and displaying real-time data from diverse sources. The page auto-refreshes every 60 seconds, ensuring you always see the latest information.
+Welcome to the Realtime API-based Fetcher, a project crafted by **Joe Shenouda** ([cyber-consult.org](http://cyber-consult.org)). This project showcases the power of publicly available APIs by fetching and displaying real-time data from diverse sources. The page auto-refreshes every 120 seconds, ensuring you always see the latest information.
 
 ---
 
