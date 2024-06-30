@@ -1,7 +1,5 @@
 # 🌐 Realtime API-based Fetcher
 
-![Banner](https://source.unsplash.com/random/800x200?technology)
-
 ## 🚀 Overview
 
 This project, crafted by **Joe Shenouda** ([cyber-consult.org](http://cyber-consult.org)), showcases the power of publicly available APIs by fetching and displaying real-time data from diverse sources. The page auto-refreshes every 60 seconds, ensuring you always see the latest information.
