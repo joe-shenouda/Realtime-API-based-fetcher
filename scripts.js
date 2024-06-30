@@ -72,8 +72,6 @@ async function fetchAPIData() {
 updateBitcoinPrices();
 fetchAPIData();
 
-// Set interval to update Bitcoin price every 60 seconds
+// Set interval to update Bitcoin price and API data every 60 seconds
 setInterval(updateBitcoinPrices, 60000);
-
-// Set interval to fetch API data every minute
 setInterval(fetchAPIData, 60000);
