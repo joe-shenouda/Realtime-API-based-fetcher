@@ -84,7 +84,7 @@ To run this project locally, follow these steps:
 
 ## Demo
 
-Check out the live demo of this project [here](https://joe-shenouda.github.io/Realtime-API-based-fetcher/){:target="_blank"}.
+Check out the live demo of this project [here](https://joe-shenouda.github.io/Realtime-API-based-fetcher/).
 
 ---
 
