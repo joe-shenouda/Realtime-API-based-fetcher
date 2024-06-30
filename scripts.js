@@ -45,7 +45,28 @@ async function fetchAPIData() {
                 Area: ${meal.strArea}<br>
                 <a href="${meal.strYoutube}" target="_blank">Watch on YouTube</a>`;
         }},
-        { name: "Bible Verse", url: "https://labs.bible.org/api/?passage=random&type=json", processData: data => `${data[0].bookname} ${data[0].chapter}:${data[0].verse} - ${data[0].text}` }
+        { name: "Bible Verse", url: "https://labs.bible.org/api/?passage=random&type=json", processData: data => `${data[0].bookname} ${data[0].chapter}:${data[0].verse} - ${data[0].text}` },
+        { name: "Breaking Bad Quotes", url: "https://breaking-bad-quotes.herokuapp.com/v1/quotes", processData: data => data[0].quote },
+        { name: "Geek Jokes", url: "https://geek-jokes.sameerkumar.website/api?format=json", processData: data => data.joke },
+        { name: "Inspiration", url: "https://inspiration.goprogram.ai/", processData: data => data.quote },
+        { name: "Official Joke API", url: "https://official-joke-api.appspot.com/random_joke", processData: data => `${data.setup} - ${data.punchline}` },
+        { name: "Programming Quotes", url: "https://programming-quotes-api.herokuapp.com/quotes/random", processData: data => `${data.en} - ${data.author}` },
+        { name: "Quotes on Design", url: "https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand", processData: data => data[0].content.rendered.replace(/(<([^>]+)>)/ig, '') },
+        { name: "Zen Quotes", url: "https://zenquotes.io/api/random", processData: data => data[0].q },
+        { name: "Dad Jokes", url: "https://icanhazdadjoke.com/", headers: { "Accept": "application/json" }, processData: data => data.joke },
+        { name: "Dog CEO", url: "https://dog.ceo/api/breeds/image/random", processData: data => `<img src="${data.message}" alt="Random Dog">` },
+        { name: "Foodish", url: "https://foodish-api.herokuapp.com/api", processData: data => `<img src="${data.image}" alt="Random Food">` },
+        { name: "Health Facts", url: "https://health.gov/myhealthfinder/api/v3/myhealthfinder.json?format=json&categoryId=20&lang=en", processData: data => data.Result.Resources.all.Resource[0].Title },
+        { name: "Motivational Quotes", url: "https://type.fit/api/quotes", processData: data => data[Math.floor(Math.random() * data.length)].text },
+        { name: "Anime Quotes", url: "https://animechan.vercel.app/api/random", processData: data => `${data.quote} - ${data.character} (${data.anime})` },
+        { name: "Bored API", url: "https://www.boredapi.com/api/activity", processData: data => data.activity },
+        { name: "Fox News", url: "https://api.foxnews.com/article/latest", processData: data => data.articles[0].title },
+        { name: "Guardian News", url: "https://content.guardianapis.com/search?api-key=test", processData: data => data.response.results[0].webTitle },
+        { name: "NASA APOD", url: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY", processData: data => `<img src="${data.url}" alt="NASA APOD"><br>${data.title}` },
+        { name: "Nasa Mars Photos", url: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY", processData: data => `<img src="${data.photos[0].img_src}" alt="Mars Photo">` },
+        { name: "Pokemon", url: "https://pokeapi.co/api/v2/pokemon/1", processData: data => `<img src="${data.sprites.front_default}" alt="Bulbasaur"><br>${data.name}` },
+        { name: "Random Fact", url: "https://uselessfacts.jsph.pl/random.json?language=en", processData: data => data.text },
+        { name: "Science Facts", url: "https://asli-fun-fact-api.herokuapp.com/", processData: data => data.data.fact },
     ];
 
     const container = document.getElementById('api-data');
@@ -53,7 +74,7 @@ async function fetchAPIData() {
 
     const promises = apis.map(async (api) => {
         try {
-            const response = await fetch(api.url);
+            const response = await fetch(api.url, api.headers ? { headers: api.headers } : {});
             if (!response.ok) throw new Error(`Failed to load ${api.name}`);
             const data = await response.json();
             const apiDiv = document.createElement('div');
