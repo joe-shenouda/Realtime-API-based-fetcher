@@ -1,8 +1,8 @@
 # Realtime API-based Fetcher
 
-## Overview
+Welcome to the Realtime API-based Fetcher, a project crafted by **Joe Shenouda** ([cyber-consult.org](http://cyber-consult.org)). This project showcases the power of publicly available APIs by fetching and displaying real-time data from diverse sources. The page auto-refreshes every 60 seconds, ensuring you always see the latest information.
 
-This project, crafted by **Joe Shenouda** ([cyber-consult.org](http://cyber-consult.org)), showcases the power of publicly available APIs by fetching and displaying real-time data from diverse sources. The page auto-refreshes every 60 seconds, ensuring you always see the latest information.
+---
 
 ## Features
 
@@ -44,6 +44,8 @@ This project, crafted by **Joe Shenouda** ([cyber-consult.org](http://cyber-cons
 - **Random Fact**: Learn a random fact.
 - **Science Facts**: Learn a random science fact.
 
+---
+
 ## How to Use
 
 Simply open the `index.html` file in your browser. The page will automatically fetch and display data from the included APIs. The data will refresh every 60 seconds.
@@ -68,6 +70,8 @@ To run this project locally, follow these steps:
     ```
     or simply drag and drop the `index.html` file into your browser.
 
+---
+
 ## How to Host on GitHub Pages
 
 1. **Fork or download** this repository.
@@ -78,7 +82,9 @@ To run this project locally, follow these steps:
 
 ## Demo
 
-Check out the live demo of this project [here](https://joe-shenouda.github.io/Realtime-API-based-fetcher/).
+Check out the live demo of this project [here](https://joe-shenouda.github.io/Realtime-API-based-fetcher/){:target="_blank"}.
+
+---
 
 ## Contributing
 
