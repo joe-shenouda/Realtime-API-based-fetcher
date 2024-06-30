@@ -94,5 +94,5 @@ updateBitcoinPrices();
 fetchAPIData();
 
 // Set interval to update Bitcoin price and API data every 60 seconds
-setInterval(updateBitcoinPrices, 60000);
-setInterval(fetchAPIData, 60000);
+setInterval(updateBitcoinPrices, 120000);
+setInterval(fetchAPIData, 120000);
