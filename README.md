@@ -1,53 +1,62 @@
 # Realtime API-based Fetcher
 
-This project showcases publicly available APIs by fetching and displaying real-time data from various sources. It was created by Joe Shenouda (cyber-consult.org) to demonstrate the power and flexibility of using public APIs for real-time information.
-
-## Table of Contents
-
-- [Features](#features)
-- [Live Demo](#live-demo)
-- [APIs Used](#apis-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+This project, created by Joe Shenouda (cyber-consult.org), showcases publicly available APIs by fetching and displaying real-time data from a variety of sources. The page is updated every 60 seconds to ensure the displayed data is current.
 
 ## Features
 
-- Fetches real-time data from multiple public APIs.
-- Displays Bitcoin prices updated every 4 seconds.
-- Showcases random advice, jokes, quotes, and more.
-- User-friendly interface with clean design.
+- **Bitcoin Prices**: Displays the current Bitcoin price in USD.
+- **Advice Slip**: Fetches a random piece of advice.
+- **Cat Fact**: Fetches a random fact about cats.
+- **JokeAPI**: Fetches a random joke.
+- **Kanye Rest**: Fetches a random Kanye West quote.
+- **Random Dog**: Displays a random dog image.
+- **Random Fox**: Displays a random fox image.
+- **Random User**: Displays a randomly generated user profile.
+- **Yes No**: Displays a yes or no answer with an image.
+- **Chucky Jokes**: Fetches a random Chuck Norris joke.
+- **Trivia**: Fetches a random trivia question.
+- **Useless Facts**: Fetches a random useless fact.
+- **Cryptocurrency**: Displays the total number of cryptocurrencies.
+- **Food**: Displays a random meal with details and a YouTube link.
+- **Bible Verse**: Fetches a random Bible verse.
+- **Breaking Bad Quotes**: Fetches a random quote from Breaking Bad.
+- **Geek Jokes**: Fetches a random geek joke.
+- **Inspiration**: Fetches a random inspirational quote.
+- **Official Joke API**: Fetches a random joke.
+- **Programming Quotes**: Fetches a random programming quote.
+- **Quotes on Design**: Fetches a random design-related quote.
+- **Zen Quotes**: Fetches a random zen quote.
+- **Dad Jokes**: Fetches a random dad joke.
+- **Dog CEO**: Displays a random dog image.
+- **Foodish**: Displays a random food image.
+- **Health Facts**: Fetches a random health fact.
+- **Motivational Quotes**: Fetches a random motivational quote.
+- **Anime Quotes**: Fetches a random anime quote.
+- **Bored API**: Fetches a random activity suggestion.
+- **Fox News**: Displays the latest news headline from Fox News.
+- **Guardian News**: Displays the latest news headline from The Guardian.
+- **NASA APOD**: Displays the Astronomy Picture of the Day from NASA.
+- **NASA Mars Photos**: Displays a random photo from the Mars Rover.
+- **Pokemon**: Displays a random Pokemon with an image.
+- **Random Fact**: Fetches a random fact.
+- **Science Facts**: Fetches a random science fact.
 
-## Live Demo
+## How to Use
 
-Check out the live demo of the project on GitHub Pages:
-[Realtime API-based Fetcher](https://joe-shenouda.github.io/Realtime-API-based-fetcher)
+Simply open the `index.html` file in your browser. The page will automatically fetch and display data from the included APIs. The data will refresh every 60 seconds.
 
-## APIs Used
+## How to Host on GitHub Pages
 
-This project uses the following public APIs:
-- [Advice Slip](https://api.adviceslip.com/)
-- [Cat Fact](https://catfact.ninja/)
-- [JokeAPI](https://jokeapi.dev/)
-- [Kanye Rest](https://kanye.rest/)
-- [Random Dog](https://random.dog/)
-- [Random Fox](https://randomfox.ca/)
-- [Random User](https://randomuser.me/)
-- [Yes No](https://yesno.wtf/)
-- [Chucky Jokes](https://api.chucknorris.io/)
-- [Trivia](https://opentdb.com/)
-- [Useless Facts](https://uselessfacts.jsph.pl/)
-- [Cryptocurrency](https://api.coingecko.com/api/v3/coins/list)
-- [Food](https://www.themealdb.com/api/)
-- [Bible Verse](https://labs.bible.org/api/)
+1. Fork or download this repository.
+2. Push the repository to your GitHub account.
+3. Navigate to the repository settings.
+4. Under the "GitHub Pages" section, select the branch you want to use for GitHub Pages (usually `main` or `master`).
+5. Save the settings and navigate to the provided URL to see your hosted page.
 
-## Installation
+## Contributing
 
-To run this project locally, follow these steps:
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Realtime-API-based-fetcher.git
-   cd Realtime-API-based-fetcher
+## License
+
+This project is licensed under the MIT License.
